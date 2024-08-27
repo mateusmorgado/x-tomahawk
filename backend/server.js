@@ -10,16 +10,19 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+//middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true })); //to parse from data
+
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
-//middleware
 app.use("/api/auth", authRoutes);
 
 console.log(process.env.MONGO_URI);
 
-app.listen(8000, () => {
+app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
   connectMongoDB();
 });
