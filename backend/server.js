@@ -3,8 +3,8 @@ import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 
 import authRoutes from "./routes/auth.routes.js";
-import { connect } from "mongoose";
 import connectMongoDB from "./db/connectMongoDB.js";
+import userRoutes from './routes/user.routes.js';
 
 dotenv.config();
 
@@ -21,6 +21,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/auth", authRoutes);
+app.use("/api/users", userRoutes);
 
 console.log(process.env.MONGO_URI);
 
