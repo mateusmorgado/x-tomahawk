@@ -5,6 +5,7 @@ import cookieParser from "cookie-parser";
 import authRoutes from "./routes/auth.routes.js";
 import connectMongoDB from "./db/connectMongoDB.js";
 import userRoutes from './routes/user.routes.js';
+import postRoutes from './routes/post.routes.js';
 
 dotenv.config();
 
@@ -22,6 +23,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/posts", postRoutes);
 
 console.log(process.env.MONGO_URI);
 
