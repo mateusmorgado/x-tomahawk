@@ -91,6 +91,21 @@ CLOUDINARY_API_SECRET=
 - Access the frontend at `http://localhost:3000`.
 - The backend API is available at `http://localhost:5000`.
 
+##Deployment
+
+1. Navigate to root
+2. chand the build script to:
+```sh
+"start": "NODE_ENV=production node backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+```
+3. Run
+```sh
+npm run build
+npm run start
+```
+
+
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
