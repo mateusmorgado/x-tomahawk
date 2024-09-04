@@ -56,8 +56,8 @@ This project is a modern web application built with a focus on performance and s
    ```
 
 3. Create a [`.env`] file and add your environment variables:
-   ```env
-  MONGO_URI=
+   ```sh
+MONGO_URI=
 PORT=5000
 JWT_SECRET=
 NODE_ENV=development
