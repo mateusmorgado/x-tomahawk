@@ -112,6 +112,10 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## License
 This project is licensed under the MIT License.
 
+## Reference:
+As A Programmer - MERN Stack Twitter: Build and Deploy a Full Stack Twitter Clone with React, Node.js and MongoDB
+https://www.youtube.com/watch?v=4GUVz2psWUg&t=19579s
+
 ---
 
 Feel free to customize this documentation to better fit your project's specifics.
