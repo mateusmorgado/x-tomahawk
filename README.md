@@ -1,5 +1,5 @@
 # x-tomahawk
-X/twitter clone project for Techstarter class of 24
+X/twitter clone project for Techstarter class of 2024
 
 ## Description
 This project is a modern web application built with a focus on performance and scalability. It includes user authentication, post management, and notification features. The backend is powered by Node.js and Express, with MongoDB as the database. The frontend is built using React and Vite as the build tool.
